@@ -18,7 +18,9 @@ void setDebug(bool debug);
 I tested with Tornado & Flask.   
 You can choose the one you like.   
 
-## Install Tornado
+## Using Tornado
+
+### Install Tornado
 ```
 sudo apt install python-pip python-setuptools
 python -m pip install -U pip
@@ -26,14 +28,18 @@ python -m pip install -U wheel
 python -m pip install tornado
 ```
 
-## Start WEB Server using Tornado
+### Start WEB Server using Tornado
 ```
 git clonse https://github.com/nopnop2002/esp8266-multipart
 cd esp8266-multipart/tornado
 python upload.py
 ```
 
-## Install Flask
+---
+
+## Using Flask
+
+### Install Flask
 ```
 sudo apt install python-pip python-setuptools
 python -m pip install -U pip
@@ -41,13 +47,14 @@ python -m pip install -U wheel
 python -m pip install flask
 ```
 
-## Start WEB Server using Flask
+### Start WEB Server using Flask
 ```
 git clonse https://github.com/nopnop2002/esp8266-multipart
 cd esp8266-multipart/flask
 python upload.py
 ```
 
+---
 
 # ESP8266 Side
 
