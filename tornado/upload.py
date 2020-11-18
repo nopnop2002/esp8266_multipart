@@ -2,7 +2,6 @@
 import os
 import werkzeug
 from datetime import datetime
-import time
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
