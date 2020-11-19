@@ -59,7 +59,7 @@ def upload_multipart():
         + werkzeug.utils.secure_filename(fileName)
     print("saveFileName={}".format(saveFileName))
     file.save(os.path.join(UPLOAD_DIR, saveFileName))
-    return make_response(jsonify({'result':'upload OK'}))
+    return "{'result':'upload OK'}"
 
 # main
 if __name__ == "__main__":
