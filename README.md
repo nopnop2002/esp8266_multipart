@@ -74,7 +74,7 @@ const char* PASSWORD = "your_password";
 const char* SERVER = "your_server_ip";
 ```
 
-## About multiparm/form-data
+## About multipart/form-data
 This library send this HTTP header.   
 
 ```
