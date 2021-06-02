@@ -8,6 +8,8 @@ const char* SERVER = "your_server_ip";
 const int PORT = 8080;
 const char* URL = "/upload_multipart";
 
+ESP8266_multipart multipart(SERVER); // Sets the host
+
 int listDir() {
   char cwdName[2];
   int fnum = 0;
@@ -74,7 +76,6 @@ void setup() {
     Serial.print("fnum=");Serial.println(fnum);
     char fname[32];
 
-    ESP8266_multipart multipart(SERVER); // Sets the host
     multipart.setPort(PORT); // Sets the port
     //multipart.setTimeout(2000); // Sets the timeout of server responce
     //multipart.setDebug(true); // Sets the debug

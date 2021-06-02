@@ -11,7 +11,7 @@ Content-Type: multipart/form-data; boundary=X-ESP8266_MULTIPART
 Content-Length: xxx
 
 --X-ESP8266_MULTIPART
-Content-Disposition: form-data; name="uploadFile"; filename="a.jpg"
+Content-Disposition: form-data; name="upfile"; filename="a.jpg"
 Content-Type: Content-Type: application/octet-stream
 
 binary-data
@@ -72,7 +72,7 @@ int ESP8266_multipart::sendFile(const char* path, File file) {
     //client.print(F("Keep-Alive: timeout=5, max=1000\r\n"));
     client.print(F("Content-Type: multipart/form-data; boundary=X-ESP8266_MULTIPART\r\n"));
 
-    String partBody = "--X-ESP8266_MULTIPART\r\nContent-Disposition: form-data; name=\"uploadFile\"; filename=\"";
+    String partBody = "--X-ESP8266_MULTIPART\r\nContent-Disposition: form-data; name=\"upfile\"; filename=\"";
     partBody += fileName;
     partBody += "\"\r\n";
     partBody += "Content-Type: application/octet-stream\r\n\r\n";
